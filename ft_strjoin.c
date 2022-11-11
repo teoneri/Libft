@@ -33,6 +33,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	else if (len_2 > 0 && len_1 == 0)
 		ft_strlcpy(new_s, (char *)s2, len_2 + len_1 + 1);
 	else if (len_1 == 0 && len_2 == 0)
-		return ("");
+		new_s[0] = 0;
 	return (new_s);
 }
